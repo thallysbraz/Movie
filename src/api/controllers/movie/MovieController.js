@@ -1,6 +1,7 @@
 class MovieController {
   async store(req, res) {
-    return res.json({ msg: "ok, true" });
+    const { id } = req.params;
+    return res.json({ msg: "ok, true", id });
   }
 }
 
